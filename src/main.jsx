@@ -4,8 +4,8 @@ import App from './App.jsx'
 import './styles/app.scss'
 
 
-// export const server  = "https://node-todo-app-rezz.onrender.com/api/v1"
-export const server = "http://localhost:3000/api/v1"
+ export const server  = "https://node-todo-app-rezz.onrender.com/api/v1"
+
 
  export const Context = createContext({isAuthenticated:false});
 

@@ -26,13 +26,15 @@ const {isAuthenticated,setIsAuthenticated,loading,setLoading} = useContext(Conte
         })
       
         toast.success(data.data.message)
-        setIsAuthenticated(true);
         setLoading(false);
+        setIsAuthenticated(true);
+       
 
     } catch (error) {
       toast.error(error.response.data.message);
-      setIsAuthenticated(false);
       setLoading(false);
+      setIsAuthenticated(false);
+    
     }
   }
   if(isAuthenticated)
